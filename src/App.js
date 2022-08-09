@@ -1,9 +1,14 @@
-function App () {
+import { Container } from '@mui/material';
+import Navbar from './components/Navbar';
+
+const App = () => {
   return (
-    <div>
-      Start Project
-    </div>
+    <>
+      <Navbar />
+      <Container maxWidth="1440px">
+      </Container>
+    </>
   );
-}
+};
 
 export default App;
