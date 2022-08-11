@@ -1,15 +1,23 @@
-import { Box, Button, Container } from '@mui/material';
+import { Box, Button } from '@mui/material';
 import logoEasyBank from '../../assets/logo.svg';
 import { SECTIONS } from './const_sections';
 
 const Navbar = () => {
   return (
-    <Box sx={{ backgroundColor: '#ffffff' }}>
-      <Container maxWidth="1440px" sx={{
+    <Box sx={{
+      backgroundColor: '#ffffff',
+      position: 'absolute',
+      width: '100%',
+      zIndex: 100,
+    }}>
+      <Box sx={{
+        maxWidth: '1440px',
+        height: '80px',
+        paddingX: '50px',
+        margin: 'auto',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        height: '80px',
       }}>
         <img
           src={logoEasyBank}
@@ -61,7 +69,7 @@ const Navbar = () => {
         }}>
           Request Invite
         </Button>
-      </Container>
+      </Box>
     </Box>
   );
 };
