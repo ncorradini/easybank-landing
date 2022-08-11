@@ -10,4 +10,6 @@
  body {
     background-color: #f3f4f6;
     font-family: 'Public Sans', sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
  }
