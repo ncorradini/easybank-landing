@@ -1,12 +1,11 @@
-import { Container } from '@mui/material';
 import Navbar from './components/Navbar';
+import Home from './components/Home';
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <Container maxWidth="1440px">
-      </Container>
+      <Home />
     </>
   );
 };
